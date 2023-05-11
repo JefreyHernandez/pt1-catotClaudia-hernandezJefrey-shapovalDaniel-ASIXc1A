@@ -1,0 +1,60 @@
+<!-- 
+    Claudia Catot, Daniel Shapoval, Jefrey Hernandez
+    04/05/2023
+    ASIXc1A M05 UF3
+    index.html
+    HTML principal per a la pàgina web
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruleta</title>
+    <link rel="stylesheet" href="roulette.css">
+    <link rel="stylesheet" href="timer.css">
+    <link rel="stylesheet" href="darkMode.css">
+</head>
+<body>
+    <main>
+        <button onclick="toggleDarkMode()" id="darkModeContainer"><span id="darkMode">🌑</span></button>
+        <h1>Ruleta</h1>
+        <div class="elements">
+            <canvas id="idcanvas" width="500" height="500"></canvas>
+            <br>
+            <button onclick="sort()"><span id="idstate">Girar</span></button>
+            <div class="mark-winner"></div>
+        </div>
+        <div id="winner"></div>
+    </main>
+
+    <section>
+        <div class="timer-container">
+            <div class="timer-input-f">
+                <label for="time-input">Hora finalización:</label>
+                <input type="time" id="time-input">
+                <button id="start-time-button">Iniciar</button>
+            </div>
+            <div class="timer-input-d">
+                <label>Hora duración:</label>
+                <input type="number" id="duration-hours" min="0" placeholder="HH">
+                <input type="number" id="duration-minutes" min="0" placeholder="MM">
+                <input type="number" id="duration-seconds" min="0" placeholder="SS">
+                <button id="start-duration-button">Iniciar</button>
+            </div>
+            <div class="timer-display">
+                <div class="current-time"></div>
+                <div class="countdown"></div>
+            </div>
+        </div>
+        <audio id="alarm-sound">
+            <source src="timer.mp3" type="audio/mpeg">
+        </audio>
+        <script src="timer.js"></script>
+
+    </section>
+</body>
+<script src="roulette.js"></script>
+<script src="timer.js"></script>
+<script src="darkMode.js"></script>
+</html>

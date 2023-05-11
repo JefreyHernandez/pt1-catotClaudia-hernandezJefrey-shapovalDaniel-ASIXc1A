@@ -1,0 +1,23 @@
+/* 
+    Claudia Catot, Daniel Shapoval, Jefrey Hernandez
+    04/05/2023
+    ASIXc1A M05 UF3
+    darkMode.css
+    CSS per a l0opció de mode foscor
+*/
+
+.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+button#darkMode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+#darkModeContainer {
+    position: relative;
+    left: 38%;
+    right: auto;
+}

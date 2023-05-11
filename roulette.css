@@ -1,0 +1,104 @@
+/* 
+    Claudia Catot, Daniel Shapoval, Jefrey Hernandez
+    04/05/2023
+    ASIXc1A M05 UF3
+    roulette.css
+    CSS per a la part de la ruleta.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe6ff;
+
+}
+
+.main {
+    padding: 10px;
+    width: 980px;
+    max-width: calc(100% - 20px);
+    margin: auto;
+    margin-top: 50px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.elements {
+    margin-top: 20px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 50px;
+    color: #ff99cc;
+    text-shadow: 2px 2px 2px #ccc;
+}
+
+canvas {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+button {
+    position: relative;
+    padding: 10px 20px;
+    z-index: 10;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 24px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ff99cc;
+    color: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    transition: all 0.3s ease;
+
+}
+
+button:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+#winner {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px;
+    color: #ff99cc;
+    text-shadow: 2px 2px 2px #ccc;
+}
+
+.mark-winner {
+    position: absolute;
+    clip-path: polygon(0 10px, 60px 0, 60px 20px);
+    background: #ffbddb;
+    width: 60px;
+    height: 20px;
+    top: 190px;
+    left: 50%;
+    margin-left: 110px;
+    z-index: 10;
+    box-shadow: 0 0 3px #33333399;
+}
+
+#idcanvas {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
